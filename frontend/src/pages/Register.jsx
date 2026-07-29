@@ -15,7 +15,7 @@ function Register() {
             console.log("Before axios");
 
             const response = await axios.post(
-                "http://127.0.0.1:8000/register",
+                "https://student-performance-prediction-project-3.onrender.com/register" 
                 {
                     name: name,
                     email: email,

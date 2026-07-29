@@ -107,7 +107,7 @@ function App() {
   const fetchChartData = async () => {
     try {
       const response = await axios.get(
-        "http://127.0.0.1:8000/chart-data"
+        https://student-performance-prediction-project-3.onrender.com
       );
 
       setChartData(response.data);
