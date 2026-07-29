@@ -10,13 +10,13 @@ function Login({ setLoggedIn }) {
         try {
 
             const response = await axios.post(
-                axios.post(
-                    "https://student-performance-prediction-project-3.onrender.com/login",
-                    {
-                        email: email,
-                        password: password
-                    }
-                );
+
+                "https://student-performance-prediction-project-3.onrender.com/login",
+                {
+                    email: email,
+                    password: password
+                }
+            );
 
             if (response.data.message === "Login Successful") {
                 setLoggedIn(true);
