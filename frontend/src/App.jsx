@@ -98,7 +98,9 @@ function App() {
   };
   const fetchHistory = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:8000/history");
+      const response = await axios.get(
+        "https://student-performance-prediction-project-3.onrender.com/history"
+      );
       setHistory(response.data);
     } catch (error) {
       console.log(error);
@@ -107,7 +109,7 @@ function App() {
   const fetchChartData = async () => {
     try {
       const response = await axios.get(
-        https://student-performance-prediction-project-3.onrender.com
+        "https://student-performance-prediction-project-3.onrender.com/history"
       );
 
       setChartData(response.data);
@@ -136,7 +138,7 @@ function App() {
       console.log(data);
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/predict",
+        "https://student-performance-prediction-project-3.onrender.com/predict",
         {
           data: data
         },
