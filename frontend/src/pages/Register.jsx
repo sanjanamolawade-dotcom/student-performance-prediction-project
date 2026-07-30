@@ -24,7 +24,7 @@ function Register() {
             );
             console.log("After axios");
             console.log("Response:", response.data);
-            alert(response.data.message);
+            alert(JSON.stringify(response.data));
 
         } catch (error) {
 
