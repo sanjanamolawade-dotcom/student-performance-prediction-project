@@ -109,7 +109,7 @@ function App() {
   const fetchChartData = async () => {
     try {
       const response = await axios.get(
-        "https://student-performance-prediction-project-2.onrender.com/history"
+        "https://student-performance-prediction-project-2.onrender.com/chart-data"
       );
 
       setChartData(response.data);
