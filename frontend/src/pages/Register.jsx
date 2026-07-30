@@ -15,7 +15,7 @@ function Register() {
             console.log("Before axios");
 
             const response = await axios.post(
-                "https://student-performance-prediction-project-3.onrender.com/register" 
+                "https://student-performance-prediction-project-3.onrender.com/register",
                 {
                     name: name,
                     email: email,
