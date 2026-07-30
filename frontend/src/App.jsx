@@ -99,7 +99,7 @@ function App() {
   const fetchHistory = async () => {
     try {
       const response = await axios.get(
-        "https://student-performance-prediction-project-3.onrender.com/history"
+        "https://student-performance-prediction-project-2.onrender.com/history"
       );
       setHistory(response.data);
     } catch (error) {
@@ -109,7 +109,7 @@ function App() {
   const fetchChartData = async () => {
     try {
       const response = await axios.get(
-        "https://student-performance-prediction-project-3.onrender.com/history"
+        "https://student-performance-prediction-project-2.onrender.com/history"
       );
 
       setChartData(response.data);
@@ -138,7 +138,7 @@ function App() {
       console.log(data);
 
       const response = await axios.post(
-        "https://student-performance-prediction-project-3.onrender.com/predict",
+        "https://student-performance-prediction-project-2.onrender.com/predict",
         {
           data: data
         },

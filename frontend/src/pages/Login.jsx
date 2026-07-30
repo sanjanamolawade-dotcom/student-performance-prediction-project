@@ -10,8 +10,7 @@ function Login({ setLoggedIn }) {
         try {
 
             const response = await axios.post(
-
-                "https://student-performance-prediction-project-3.onrender.com/login",
+                "https://student-performance-prediction-project-2.onrender.com/login",
                 {
                     email: email,
                     password: password
@@ -20,8 +19,7 @@ function Login({ setLoggedIn }) {
 
             if (response.data.message === "Login Successful") {
                 setLoggedIn(true);
-            }
-            else {
+            } else {
                 alert("Invalid Email or Password");
             }
 
@@ -31,6 +29,7 @@ function Login({ setLoggedIn }) {
             alert("Backend Error");
 
         }
+
 
     };
 
